@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Idroid';
+    src: url(./fontes/idroid.otf) format('opentype');
+    font-weight: ;
+    font-style: ;
+}
+
+@font-face {
+    font-family: 'equal sans';
+    src: url(./fontes/equalsans_demo.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); /*font-family: 'PT Sans', sans-serif;*/
