@@ -5,9 +5,66 @@
     src: url(./fontes/idroid.otf) format('opentype');
 }
 
-@font-face {
+@font-face { /*test*/
     font-family: 'equal sans';
     src: url(./fontes/equalsans_demo.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); /*font-family: 'PT Sans', sans-serif;*/
+
+body {
+    background-color: #82D9A8;
+}
+
+header {
+    background-color: #145932;
+    color: white;
+    font-family: 'equal sans';
+}
+
+a {
+    color: #145932;
+    text-decoration: none;
+}
+
+nav > a {
+    color: white;
+}
+
+main {
+    background-color: white;
+}
+
+section#principal > h1 {
+    color: #145932;
+}
+
+article > h2 {
+    color: #145932;
+    background-image: linear-gradient(to left, #FFFFFF, #82d9a892);
+}
+
+section#video {
+    background-color: #145932;
+}
+
+section#lista {
+    background-color: #82D9A8;
+}
+
+.h1dalista {
+    background-color: #3DD980;
+    color: white;
+
+}
+
+footer {
+    background-color: #145932;
+    color: white;
+}
+
+.link_footer { /*footer > p > a*/
+    color: white;
+}
