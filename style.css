@@ -14,9 +14,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); /*font-family: 'PT Sans', sans-serif;*/
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-/*pseudo-classe root, todo documento tem*/
-/*raiz da arvore do nosso documento, tudo definido aqui vai servir para o documento inteiro, podemos criar variaveis que comecam com --...*/
 :root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
@@ -41,7 +43,6 @@ header {
     font-family: var(--fonte-destaque);
 
     text-align: center;
-    margin: 15px;
 
 }
 
@@ -75,14 +76,19 @@ strong {
     color: var(--cor4);
 }
 
-
-
 main {
     background-color: var(--cor-white);
 
     box-shadow: 1px 1px 1px black;
-}
 
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+
+}
+img {
+    width: 100%;
+}
 
 p {
     font-size: 0.875em;
@@ -107,7 +113,6 @@ section#video {
 aside#lista {
     background-color: var(--cor2);
 
-    margin: 15px;
     border-radius: 5px;
     box-shadow: 1px 1px 1px black;
     
