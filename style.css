@@ -60,6 +60,7 @@ header > h1 {
     color: var(--cor-white);
     font-size: 3em;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.466);
+    font-weight: normal;
 
 }
 
@@ -159,6 +160,8 @@ main a {
 section#principal > h1 {
     color: var(--cor4);
     font-family: var(--fonte-idroid);
+    font-weight: normal;
+    font-size: 1.7em;
 }
 
 main h2 {
@@ -166,10 +169,6 @@ main h2 {
     font-family: var(--fonte-idroid);
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 0.3em;
-}
-
-main section#video {
-    background-color: var(--cor4);
 }
 
 img {
@@ -182,6 +181,27 @@ img.android_pequeno { /*img é display inline, para centralizar passar para disp
     margin: auto;
 }
 
+/*-----VIDEO-----*/
+.video {
+    background-color: var(--cor4);
+    margin: 0px -20px 30px -20px;
+    padding: 30px;
+
+    /*gambiarra*/
+    /*vamos ter uma config pro video*/
+    position: relative;
+    padding-bottom: 55.5%;
+}
+
+.video > iframe {
+    /*vamos ter uma config pro .video > iframe*/
+    position: absolute; 
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
 
 /*-----LISTA-----*/
 aside > p > a.externo{
