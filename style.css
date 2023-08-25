@@ -89,24 +89,15 @@ nav > a {
     padding: 10px;
 
     transition-duration: 0.2s;
+
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav > a:hover {
     background-color: var(--cor2);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-a {
-    color: var(--cor4);
-
-    text-decoration: none;
-    font-weight: bold;
-
-}
-
-strong {
-    color: var(--cor4);
 }
 
 main {
@@ -126,22 +117,36 @@ main {
 
 
 }
-img {
-    width: 100%;
-}
 
-img.android_pequeno { /*img é display inline, para centralizar passar para display block*/
-    width: 50%;
-    display: block;
-    margin: auto;
-
-
-}
-
-p {
-    font-size: 0.875em;
-    text-indent: 1.2em;
+main p {
+    font-size: 0.975em;
+    text-indent: 1.5em;
     text-align: justify;
+
+    margin: 15px 0px;
+    line-height: 2em;
+}
+
+main a {
+    color: var(--cor4);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+ main a:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor3));
+    transition-duration: 0.2seg;
+    text-decoration: underline;
+
+ }
+
+ main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    background-color: var(--cor2);
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 section#principal > h1 {
@@ -149,14 +154,40 @@ section#principal > h1 {
     font-family: var(--fonte-idroid);
 }
 
-article > h2 {
+main h2 {
     color: var(--cor4);
     font-family: var(--fonte-idroid);
-    background-image: linear-gradient(to left, var(--cor-white), var(--cor2));
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 0.3em;
 }
+
+aside strong {
+    background-color: var(--cor-white);
+}
+
+img {
+    max-width: 100%;
+}
+
+img.android_pequeno { /*img é display inline, para centralizar passar para display block*/
+    max-width: 350px;
+    display: block;
+    margin: auto;
+
+
+}
+
+
+
+
 
 section#video {
     background-color: var(--cor4);
+}
+
+aside {
+    margin-top: 15px; /*em baixo nao precisa, pois eu ja tinha colocado uma margin: 15px em todos nos p's do main*/
+    padding: 0px 20px;
 }
 
 aside#lista {
@@ -169,11 +200,17 @@ aside#lista {
 
 .h1dalista {
     background-color: var(--cor2);
-    color: var(--cor0);
+    color: var(--cor-white);
 
     font-size: 1em;
     border-radius: 5px;
 
+    padding: 10px 10px;
+
+}
+
+ul {
+    padding: 0px 20px;
 }
 
 footer {
